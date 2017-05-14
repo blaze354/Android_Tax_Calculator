@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FFFFFF</color>
+    <string name="about_version">(Version 1.0.0)</string>
+    <color name="black">#474747</color>
+
     <string name="app_name">Calculatrice de Taxes Québec</string>
 
     <string name="language_default">Français</string>
@@ -21,8 +23,12 @@
     <string name="title_activity_settings">Paramètres \n</string>
     <string name="title_activity_about">À propos</string>
 
-    <string name="about_version">Calculatrice de Taxes Québec(Version 1.0.0) \n</string>
+
     <string name="about_message"> Ceci est une calculatrice qui permet de calculer des taxes dans la province du Québec.</string>
+
+    <string name="about_message2"> Le prix est calculé comme il suit:\nTotal = Prix * (TPS + TVQ + 1)</string>
+
+    <string name="copyrights">Tous droits réservés. 2017 ZLY Software</string>
 
     <string name="settings_saveBtnTxt">Sauvegarder</string>
     <string name="settings_languageTxt">Langue</string>

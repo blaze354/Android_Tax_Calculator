@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <resources>
+    <string name="about_version">(Version 1.0.0) </string>
     <color name="black">#474747</color>
 
     <string name="app_name">Quebec Tax Calculator</string>
@@ -20,10 +21,12 @@
     <string name="title_activity_settings">Settings \n</string>
     <string name="title_activity_about">About</string>
 
-    <string name="about_version">Quebec Tax Calculator (Version 1.0.0) \n</string>
+
     <string name="about_message"> This is a simple tax calculator whose purpose is to calculate taxes
     in the province of Quebec , Canada.</string>
-
+    <string name="about_message2"> The price is calculated as follow:\nTotal = Price * (GST + QST + 1)
+    </string>
+    <string name="copyrights"> © 2017 ZLY Software.  All rights reserved.</string>
 
     <string name="settings_saveBtnTxt">Save</string>
     <string name="settings_languageTxt">Language</string>
