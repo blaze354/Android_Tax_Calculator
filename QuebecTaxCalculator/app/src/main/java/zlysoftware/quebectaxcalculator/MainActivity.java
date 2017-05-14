@@ -136,18 +136,27 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_settings) {
             Toast.makeText(getApplicationContext(), "Settings Selected", Toast.LENGTH_SHORT).show();
 
+            Intent i = new Intent(MainActivity.this, Settings.class);
+            startActivity(i);
+            return true;
+        }
+        if (id == R.id.action_about) {
+            Toast.makeText(getApplicationContext(), "About Selected", Toast.LENGTH_SHORT).show();
+
+            Intent i = new Intent(MainActivity.this, About.class);
+            startActivity(i);
             return true;
         }
 
         return super.onOptionsItemSelected(item);
     }
 
-   /* public void onSettingsButtonClick(View view)
+    /*public void onSettingsButtonClick(View view)
     {
         if(view.getId() == R.id.action_settings)
         {
             Intent i = new Intent(MainActivity.this, Settings.class);
             startActivity(i);
         }
-    }*/
+   }*/
 }

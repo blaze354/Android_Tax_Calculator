@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FFFFFF</color>
+    <string name="app_name">Calculatrice de Taxes Québec</string>
+
+    <string name="language_default">Français</string>
+    <string name="language_defaultTag">fr</string>
+    <string name="language_second">English</string>
+    <string name="language_secondTag">en</string>
+
+
+    <string name="action_settings">Paramètres</string>
+    <string name="action_about">À propos</string>
+
+    <string name="hint_message">Entrez un prix</string>
+    <string name="gst_tax">TPS (5%)</string>
+    <string name="qst_tax">TVQ (9.975%)</string>
+    <string name="total_tax">Total des taxes</string>
+    <string name="total">Total</string>
+
+    <string name="title_activity_settings">Paramètres \n</string>
+    <string name="title_activity_about">À propos</string>
+
+    <string name="about_version">Calculatrice de Taxes Québec(Version 1.0.0) \n</string>
+    <string name="about_message"> Ceci est une calculatrice qui permet de calculer des taxes dans la province du Québec.</string>
+
+    <string name="settings_saveBtnTxt">Sauvegarder</string>
+    <string name="settings_languageTxt">Langue</string>
+
+
+</resources>
