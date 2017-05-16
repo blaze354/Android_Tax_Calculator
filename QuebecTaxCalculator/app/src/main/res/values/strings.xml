@@ -4,6 +4,7 @@
     <color name="black">#474747</color>
 
     <string name="app_name">Quebec Tax Calculator</string>
+
     <string name="language_default">English</string>
     <string name="language_defaultTag">en</string>
     <string name="language_second">Français</string>

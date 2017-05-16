@@ -1,46 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="zlysoftware.quebectaxcalculator.MainActivity"
-    tools:showIn="@layout/activity_main"
-    tools:layout_editor_absoluteY="81dp"
-    tools:layout_editor_absoluteX="0dp">
+    android:layout_height="match_parent">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="6dp"
+        android:layout_width="959dp"
+        android:layout_height="444dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.428">
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteY="12dp">
 
-        <EditText
-            android:id="@+id/EnterPriceTxt"
+        <TextView
+            android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="@string/hint_message"
-            android:inputType="number|numberDecimal"
+            android:layout_marginBottom="10dp"
+            android:text="@string/app_name"
             android:textAlignment="center"
-            android:textSize="16sp"
-            tools:layout_editor_absoluteX="99dp"
-            tools:layout_editor_absoluteY="78dp"
-
-            />
+            android:textColor="@color/colorPrimary"
+            android:textSize="54sp"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="24dp"
+            tools:layout_editor_absoluteY="16dp" />
 
         <TextView
             android:id="@+id/TitleTxt"
+            tools:layout_editor_absoluteX="24dp"
+            tools:layout_editor_absoluteY="16dp"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:layout_weight="0.19"
@@ -48,11 +42,24 @@
             android:textAlignment="center"
             android:textColor="@color/colorPrimary"
             android:textSize="34sp"
-            android:visibility="gone"
-            tools:layout_editor_absoluteX="24dp"
-            tools:layout_editor_absoluteY="16dp" />
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/EnterPriceTxt"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:ems="10"
+            android:hint="@string/hint_message"
+            android:inputType="number|numberDecimal"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="99dp"
+            tools:layout_editor_absoluteY="78dp"
+
+            />
 
         <TableLayout
+            android:layout_marginTop="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -64,13 +71,13 @@
                 <TextView
                     android:id="@+id/GstTxt"
                     android:layout_width="200dp"
-                    android:layout_height="37dp"
+                    android:layout_height="wrap_content"
                     android:layout_column="0"
                     android:layout_row="1"
                     android:layout_weight="1"
                     android:text="@string/gst_tax"
                     android:textAlignment="textEnd"
-                    android:textSize="16sp"
+                    android:textSize="30sp"
                     tools:layout_editor_absoluteX="0dp"
                     tools:layout_editor_absoluteY="160dp" />
 
@@ -84,7 +91,7 @@
                     android:ems="10"
                     android:inputType="number"
                     android:textAlignment="center"
-                    android:textSize="16sp"
+                    android:textSize="18sp"
                     tools:layout_editor_absoluteX="66dp"
                     tools:layout_editor_absoluteY="449dp" />
 
@@ -98,13 +105,13 @@
                 <TextView
                     android:id="@+id/QstTxt"
                     android:layout_width="200dp"
-                    android:layout_height="37dp"
+                    android:layout_height="match_parent"
                     android:layout_column="0"
                     android:layout_row="3"
                     android:layout_weight="1"
                     android:text="@string/qst_tax"
                     android:textAlignment="textEnd"
-                    android:textSize="16sp"
+                    android:textSize="30sp"
                     tools:layout_editor_absoluteX="3dp"
                     tools:layout_editor_absoluteY="220dp" />
 
@@ -116,7 +123,7 @@
                     android:ems="10"
                     android:inputType="none"
                     android:textAlignment="center"
-                    android:textSize="16sp"
+                    android:textSize="18sp"
                     tools:layout_editor_absoluteX="183dp"
                     tools:layout_editor_absoluteY="160dp" />
 
@@ -136,7 +143,7 @@
                     android:layout_weight="1"
                     android:text="@string/total_tax"
                     android:textAlignment="textEnd"
-                    android:textSize="16sp"
+                    android:textSize="30sp"
                     tools:layout_editor_absoluteX="0dp"
                     tools:layout_editor_absoluteY="160dp" />
 
@@ -150,7 +157,7 @@
                     android:ems="10"
                     android:inputType="number"
                     android:textAlignment="center"
-                    android:textSize="16sp"
+                    android:textSize="18sp"
                     tools:layout_editor_absoluteX="66dp"
                     tools:layout_editor_absoluteY="449dp" />
 
@@ -159,26 +166,27 @@
         </TableLayout>
 
         <TextView
+            android:layout_marginTop="30dp"
             android:id="@+id/TotalTxt"
             android:layout_width="match_parent"
-            android:layout_height="35dp"
+            android:layout_height="wrap_content"
             android:text="@string/total"
             android:textAlignment="center"
-            android:textSize="18sp"
+            android:textSize="35sp"
             tools:layout_editor_absoluteX="131dp"
             tools:layout_editor_absoluteY="371dp" />
 
         <EditText
+            android:layout_marginTop="35dp"
             android:id="@+id/TotalOut"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="number"
             android:textAlignment="center"
-            android:textSize="16sp"
+            android:textSize="30sp"
             tools:layout_editor_absoluteX="182dp"
             tools:layout_editor_absoluteY="220dp" />
 
     </LinearLayout>
-
 </android.support.constraint.ConstraintLayout>

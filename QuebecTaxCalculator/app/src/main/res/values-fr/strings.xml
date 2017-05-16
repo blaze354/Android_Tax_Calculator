@@ -14,10 +14,10 @@
     <string name="action_settings">Paramètres</string>
     <string name="action_about">À propos</string>
 
-    <string name="hint_message">Entrez un prix</string>
+    <string name="hint_message">Entrer un montant</string>
     <string name="gst_tax">TPS (5%)</string>
     <string name="qst_tax">TVQ (9.975%)</string>
-    <string name="total_tax">Total des taxes</string>
+    <string name="total_tax">Total taxes</string>
     <string name="total">Total</string>
 
     <string name="title_activity_settings">Paramètres \n</string>
